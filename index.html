@@ -1,11 +1,331 @@
 <!DOCTYPE html>
-<html lang="e">
+<html lang="es" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./img/person_9_icon-icons.com_68901.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
 </head>
 <body>
-    
+    <!--Header-->
+   <header>
+    <nav class="navbar navbar-expand-lg bg-nav fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">DENISE SALINAS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#portafolio">PORTAFOLIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">SOBRE MI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+   </header>
+   <!--Main--> 
+   <main>
+    <!--Informacion personal-->
+    <section class=" bg-infoPer conteiner d-flex flex-column align-items-center mt-5 py-5">
+        <img src="./img/avataaars.svg" alt="" width="200px">
+        <h2 class="mt-3 mb-0 display-5"> <strong>DENISE</strong> SALINAS</h2>
+        <div class="d-flex gap-2 py-4 align-items-center" >
+            <div class="line1"></div>
+            <div><i class="fa-solid fa-star"></i></div>
+            <div class="line1"> </div>
+        </div>  
+        <p>Maquetador web</p>
+    </section>
+
+    <!--Portafolio-->
+    <section id="portafolio"class="bg-portafolio py-4">
+                                      <!--Título seccion-->
+        <div class="container d-flex flex-column align-items-center py-4">
+          <h1 class="display-6 fw-bold "> PORTAFOLIO</h1>
+          <div class="d-flex gap-2 pb-4 align-items-center" >
+            <div class="line2"></div>
+            <div><i class="fa-solid fa-star"></i></div>
+            <div class="line2"> </div>
+        </div> 
+                                      <!--Tarjetas-->
+          <div class="row row-gap-4 bg-portafolio">
+                          <!--LEMON PIE-->
+          <article class="col-12 col-sm-6 col-lg-4 ">
+            <div class="card position-relative" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lemonModal">
+              <i class="fa-solid fa-circle-plus plus position-absolute fa-5x "></i>
+              <img src="./img/lemon-pie.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-text text-center">Lemon Pie</h3>
+              </div>
+            </div>
+            <!-- Modal Lemon -->
+            <div class="modal fade" id="lemonModal" tabindex="-1" aria-labelledby="lemonModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center">
+                      <h1 class="modal-title fs-5 " id="lemonModalLabel">Proyecto LemonPie</h1>
+                      <img src="./img/lemon-pie.jpeg" class="card-img-top py-4" alt="...">
+                      <a type="button" class="btn btn-primary text-center" href="">Visitar Sitio </a>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </div>                    
+          </article>
+                        <!--CV BATMAN-->
+          <article class="col-12 col-sm-6 col-lg-4 ">
+            <div class="card position-relative" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#batmanModal">
+              <i class="fa-solid fa-circle-plus plus position-absolute fa-5x "></i>
+              <img src="./img/CVBatman.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-text text-center">Cv Batman</h3>
+              </div>
+            </div>
+               <!-- Modal Batman -->
+            <div class="modal fade" id="batmanModal" tabindex="-1" aria-labelledby="batmanModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content text-center">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5 text-center" id="batmanModalLabel">Proyecto CvBatman</h1>
+                      <img src="./img/CVBatman.png" class="card-img-top py-4" alt="...">
+                      <a type="button" class="btn btn-primary text-center" href="">Visitar Sitio </a>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>  
+          </article>
+                      <!--SUPERHEROES-->
+         <article class="col-12 col-sm-6 col-lg-4 ">
+          <div class="card position-relative" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#superModal">
+            <i class="fa-solid fa-circle-plus plus position-absolute fa-5x "></i>
+            <img src="./img/super.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-text text-center">SuperHeroes</h3>
+            </div>
+          </div>
+           <!-- Modal Superheroes -->
+           <div class="modal fade" id="superModal" tabindex="-1" aria-labelledby="superModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">                 
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container text-center gap-3">
+                    <h1 class="modal-title fs-5 " id="superModalLabel">Proyecto Superheroes</h1>
+                    <img src="./img/super.png" class="card-img-top py-4" alt="...">
+                    <a type="button" class="btn btn-primary text-center" href="">Visitar Sitio </a>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>  
+         </article>
+                      <!--PETSHOP-->
+          <article class="col-12 col-sm-6 col-lg-4">
+            <div class="card position-relative" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#petModal">
+              <i class="fa-solid fa-circle-plus plus position-absolute fa-5x "></i>
+              <img src="./img/petshop.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-text text-center">Pet Shop</h3>
+              </div>
+            </div>
+               <!-- Modal PetShop -->
+            <div class="modal fade" id="petModal" tabindex="-1" aria-labelledby="petModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">                  
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5 " id="petModalLabel">Proyecto PetShop</h1>
+                      <img src="./img/petshop.jpeg" class="card-img-top py-4" alt="...">
+                      <a type="button" class="btn btn-primary text-center" href="">Visitar Sitio </a>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>  
+          </article>
+                <!--PIZZERÍA-->
+          <article class="col-12 col-sm-6 col-lg-4 ">
+            <div class="card position-relative" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pizzaModal">
+              <i class="fa-solid fa-circle-plus plus position-absolute fa-5x "></i>
+              <img src="./img/piza.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-text text-center">Pizzería</h3>
+              </div>
+            </div>
+             <!-- Modal Pizza -->
+             <div class="modal fade" id="pizzaModal" tabindex="-1" aria-labelledby="pizzaModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">                   
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5 " id="pizzaModalLabel">Proyecto Pizzería</h1>
+                      <img src="./img/piza.jpeg" class="card-img-top py-4" alt="...">
+                      <a type="button" class="btn btn-primary text-center" href="">Visitar Sitio </a>
+                    </div>
+                  </div>                
+                </div>
+              </div>
+            </div>  
+          </article>
+                          <!--GAMESHOP-->    
+          <article class="col-12 col-sm-6 col-lg-4 ">
+            <div class="card position-relative" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameModal">
+              <i class="fa-solid fa-circle-plus plus position-absolute fa-5x "></i>
+              <img src="./img/gameshop.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-text text-center">Game Shop</h3>
+              </div>
+            </div>
+             <!-- Modal Game -->
+             <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5 " id="gameModalLabel">Proyecto GameShop</h1>
+                      <img src="./img/gameshop.jpeg" class="card-img-top py-4" alt="...">
+                      <a type="button" class="btn btn-primary text-center" href="">Visitar Sitio </a>
+                    </div>
+                  </div>          
+                </div>
+              </div>
+            </div>  
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--Sobre mi-->
+    <section id="sobre-mi" class="bg-infoPer py-4" >
+      <div class="container d-flex flex-column align-items-center py-4 ">
+        <h1 class="display-6 fw-bold text-center "> SOBRE MI</h1>
+        <div class="d-flex gap-2 pb-4 align-items-center" >
+          <div class="line1"></div>
+          <div><i class="fa-solid fa-star"></i></div>
+          <div class="line1"> </div>
+      </div> 
+      </div>
+      <div class="container text-center mb-4">
+       <div class="row pb-4 text-start">
+        <p class="col-sm-12 col-md-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, laudantium soluta dolore quisquam blanditiis similique sint quia rerum. Ullam iste reiciendis, aliquid dolorum labore fuga rerum minima eius eum molestias.</p>
+        <p class="col-sm-12 col-md-6"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex delectus neque, quae laboriosam quaerat dolor consequuntur possimus culpa voluptate illo facere maiores quam odit vitae. Impedit dolorum laboriosam molestiae eveniet.</p>
+        </div> 
+        <button type="button" class="btn btn-outline-dark "> <i class="fa-solid fa-download pe-2"></i>Descargar CV</button>
+      </div>        
+    </section>
+
+    <!--Contacto-->
+    <section id="contacto" class="bg-portafolio py-4">     
+     <div class="container content-fix">
+      <div class="container d-flex flex-column align-items-center py-4">
+        <h1 class="display-6 fw-bold "> CONTACTO</h1>
+        <div class="d-flex gap-2 pb-4 align-items-center" >
+          <div class="line2"></div>
+          <div><i class="fa-solid fa-star"></i></div>
+          <div class="line2"> </div>
+      </div> 
+      <form class="container py-4">
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Nombre completo</label>
+          <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputTelefono" class="form-label">Número de teléfono</label>
+          <input type="telefono" class="form-control" id="exampleInputTelefono">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlMensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlMensaje" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Enviar</button>
+      </form>
+     </div>
+    </section>
+   </main>
+   
+   <!--Footer-->
+   <footer class="page-footer font-small bg-nav">
+       <div class="row align-items-center m-3 py-4">
+        <div class="col-12 col-sm-4 col-md-4 pb-3 d-flex flex-column align-items-center">
+        <h3 class="fw-bold">MI LUGAR</h3>
+        <span>Saenz Peña</span>
+        <span>Gral. San Martín</span>
+        <span>La Pampa</span>
+        <span>CP 8209</span>
+      </div>
+      
+      <div class="col-12 col-sm-4 col-md-4 pb-3">
+        <h3 class="fw-bold text-center ">SIGAMOS CONECTADOS</h3>
+        <div class="row">
+        <div class="col-md-12 py-3">
+          <div class="my5 d-flex justify-content-center align-items-center">
+            <!--Facebook-->
+            <a href="" target="_blank">
+              <i class="fa-brands fa-facebook-f fa-lg me-sm-3 me-3"></i>
+            </a>
+            <!--Github-->
+            <a href="" target="_blank">
+              <i class="fa-brands fa-github fa-lg me-sm-3 me-3"></i>
+            </a>
+            <!--Linkedin-->
+            <a href="" target="_blank">
+              <i class="fa-brands fa-linkedin fa-lg me-sm-3 me-3"></i>
+            </a>
+            <!--Instagram-->
+            <a href="" target="_blank">
+              <i class="fa-brands fa-instagram fa-lg me-sm-3 me-3"></i>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class=" col-12 col-sm-4 col-md-4 d-flex flex-column align-items-center pb-3">
+        <h3 class="fw-bold "> SOBRE MÍ</h3>
+        <p class="text-center">Soy una persona creativa y con ansisas de aprender. Tengo conocimeintos de HTML, CSS y Bootstrap.</p>
+      </div>      
+    </div>
+
+      <!--Copyright-->
+    <div class="footer-copyright text-center py-3 bg-secondary text-white">
+      <span > Copyright ©</span>
+      <script> document.write(new Date().getFullYear())</script>. Todos los derechos reservados.
+    </div>
+   </footer>
+   <script src="./js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

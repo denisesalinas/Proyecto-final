@@ -1,0 +1,91 @@
+.bg-footer{
+    background-color: #00838f;
+}
+.bg-nav{
+    background-color: #6B4E71;
+    color:white;
+}
+.bg-infoPer{
+    background-color: #C2B2B4;
+    color:white;
+}
+.bg-portafolio{
+    background-color: white;;
+    color:#2C3E51;
+}
+.bg-secondary{
+    background-color: #006972;
+}
+.text-primary{
+    color:#00838f;
+}
+
+.btn-primary{
+    background-color: #00838f;
+    border-color: #002629;
+}
+
+.btn-primary:hover,
+.btn-primary:focus{
+    background-color: #00545c;
+}
+.btn-outline-dark{
+    border-color: #212529;
+    color: #212529; 
+}
+.btn-outline-dark:hover{
+    color:white;
+    background-color: #212529;
+}
+.btn-outline-dark:active{
+    color:#fff;
+    background-color: #212529;
+    border-color: #212529;
+}
+
+footer a {
+    color:white;
+}
+footer a:hover{
+    color:#e8dfdf;
+}
+.line1{
+    background-color: white;
+    height: 2px;
+    width: 100px;
+}
+.line2{
+    background-color: #2C3E51;
+    height: 2px;
+    width: 100px;
+}
+.plus{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    visibility: hidden;   
+}
+.card:hover .plus{
+    visibility: visible;
+}
+body{
+    font-size: 14px;
+}
+h3{
+    font-size: 20px;
+}
+span, p {
+    font-size: 15px;
+}
+@media(min-width:576px){
+    body {
+       font-size: 17px;
+    }
+}
+@media(min-width:768px){
+    .content-fix{
+        max-width: 50%;
+    }
+}
